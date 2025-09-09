@@ -20,15 +20,15 @@
 .delete-button {
     /* Posiciona o botão em relação ao .card */
     position: absolute;
-    top: 5px; /* Ajusta a distância do topo */
+    top: 450px; /* Ajusta a distância do topo */
     right: 5px; /* Ajusta a distância da direita */
-    
+    height: 50px;
     /* Outros estilos para o botão */
     background-color: transparent;
     border: none;
     font-weight: bold;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #fff; /* Cor do "X" */
     text-shadow: 1px 1px 2px #000; /* Sombra para melhorar a visibilidade */
 }

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useFoodDataMutate } from '../../hooks/useFoodDataMutate';
 import type { FoodData } from '../../interface/FoodData';
 
+
 import "./modal.css";
 
 interface InputProps {
@@ -10,7 +11,7 @@ interface InputProps {
     updateValue(value: any): void
 }   
 
-interface ModalProps {
+export interface ModalProps {
     closeModal(): void
 }
 
@@ -39,9 +40,9 @@ export function CreateModal({ closeModal }: ModalProps){
     }
 
     useEffect(() => {
-        if(!isSuccess) return 
-        closeModal();
-    }, [isSuccess])
+    if(!isSuccess) return 
+    closeModal();
+}, [isSuccess, closeModal])
 
     return(
         <div className="modal-overlay">

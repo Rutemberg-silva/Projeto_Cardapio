@@ -15,8 +15,9 @@ h2 {
     color: #333;
     text-align: center;
     padding: 10px;
-
 }
+
+
 
 .close-btn:hover {
     color: #000;
@@ -79,7 +80,7 @@ h2 {
 
 .modal-overlay .modal-body .btn-secondary {
     position: initial;
-    width: 100%;
+    width: 25%;
     margin-top: 32px;
 }
 
