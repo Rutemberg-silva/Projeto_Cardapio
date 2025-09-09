@@ -33,4 +33,10 @@ public class FoodController {
         repository.save(foodData);
         return;
     }
+
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
+    @DeleteMapping("/delete/{id}")
+    public void deleteFoodById(@PathVariable  Long id) {
+        repository.deleteById(id);
+    }
 }
